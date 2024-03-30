@@ -1,5 +1,4 @@
 void main() {
-  var nums = [2, 5, 5, 11];
   int target = -11211;
 
   print(isPalindrome(target));
@@ -16,7 +15,6 @@ void main() {
 //   return true;
 // }
 bool isPalindrome(int x) {
-  bool res = false;
   if (x >= 0) {
     int newX = int.parse(x.toString().split('').reversed.join());
     return newX == x ? true : false;
